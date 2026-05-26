@@ -10,10 +10,10 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Document(collection = "productoAudioVisual")
+@Document(collection = "productosAudioVisuales")
 public class productoAudioVisual {
     @Id
-    private Long id;
+    private String id; // Cambiado de Long a String para compatibilidad nativa con MongoDB
 
     private String titulo;
 
